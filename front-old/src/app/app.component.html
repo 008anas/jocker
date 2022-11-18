@@ -1,0 +1,15 @@
+<div class="container flex flex-col items-center p-24">
+  <h1 class="text-3xl font-bold">
+    {{currentJoke?.setup}}
+  </h1>
+  <p class="mt-6 italic font-light" *ngIf="showPunchline">{{currentJoke?.punchline}}</p>
+  <div class="flex gap-12 mt-12">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      (click)="showPunchline = !showPunchline">
+      {{showPunchline ?  'Hide' : 'Show'}} Punchline
+    </button>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" (click)="getRandomJoke()">
+      Next Joke
+    </button>
+  </div>
+</div>
