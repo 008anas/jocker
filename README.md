@@ -1,6 +1,6 @@
-#Jocker Express + angular app usign docker
+# Jocker Express + angular app usign docker
 
-##Clone the project
+## Clone the project
 
 git clone https://github.com/008anas/jocker
 
